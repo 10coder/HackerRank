@@ -1,3 +1,5 @@
+package org.example;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -8,7 +10,7 @@ public class ReverseArray {
     public static void main(String[] args) {
         //toList() --> Gives immutable list this results in
         // UnSupportedOperation on ImmutableCollections
-//        System.out.println(reverseArray(IntStream.range(1,10).boxed().toList()));
+        // System.out.println(reverseArray(IntStream.range(1,10).boxed().toList()));
 
         //Doesnt give immutable list
         System.out.println(reverseArray(IntStream.range(1,10).boxed().collect(Collectors.toList())));
